@@ -1,0 +1,493 @@
+@charset "utf-8";
+
+/* Reset CSS*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: rgb(246, 236, 236);
+}
+
+/* header */
+header {
+  height: 97.79px;
+  width: 390px;
+
+}
+
+header img#DoeDrawing {
+  width: 44.68px;
+  height: 50px;
+  position: fixed;
+  left: 44%;
+  top: 2.5%;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.drawer_hidden {
+  display: none;
+}
+
+.drawer_open {
+  height: 60px;
+  width: 60px;
+  position: fixed;
+  right: 0;
+  top: 45px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.drawer_open span,
+.drawer_open span:before,
+.drawer_open span:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background: #af542b;
+  transition: 0.5s;
+  position: absolute;
+}
+
+.drawer_open span:before {
+  bottom: 8px;
+}
+
+.drawer_open span:after {
+  top: 8px;
+}
+
+#drawer_input:checked ~ .drawer_open span {
+  background: rgba(255, 255, 255, 0);
+}
+
+#drawer_input:checked ~ .drawer_open span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+
+#drawer_input:checked ~ .drawer_open span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+.nav_content {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  z-index: 99;
+  background: #fff;
+  transition: 0.5s;
+}
+
+.nav_item {
+  font-size: 25px;
+  text-align: left;
+  line-height: 70px;
+  color: #af542b;
+  position: relative;
+  top: 250px;
+  margin: 19.5px;
+}
+
+.nav_list {
+  list-style: none;
+}
+
+#drawer_input:checked ~ .nav_content {
+  left: 0;
+}
+
+/* header */
+
+/* 1st.section */
+
+section#first_section {
+  padding: 27px 23px;
+}
+
+section#first_section h2 {
+  text-align: center;
+  white-space: pre-wrap;
+  color: #af524b;
+  padding: 17px;
+}
+
+section#first_section h2 strong {
+  font-size: 46px;
+  font-weight: 700;
+}
+
+section#first_section p {
+  color: #af524b;
+  font-size: 16px;
+  margin-top: 16px;
+  text-align: center;
+}
+
+section button#JoinDoePass {
+  background-color: #af524b;
+  padding: 11px 17px;
+  color: white;
+  margin: 17px;
+  position: relative;
+  left: 95px;
+  top: 10px;
+}
+
+section img {
+  width: 343px;
+  height: 257px;
+  padding: 17px;
+}
+
+/* 1st.section */
+
+/* 2st.section */
+
+div#divider {
+  border-bottom: 1px solid #af524b;
+  margin: 17px;
+}
+
+section div#second_section_title h3 {
+  color: #af524b;
+  font-size: 41px;
+  padding: 17px;
+  text-align: center;
+}
+
+section#second_section div p#coffee_price {
+  padding: 10px 23px;
+  text-align: center;
+}
+
+/* 中央に寄せる */
+section strong#coffee_price {
+  padding: 17px;
+}
+
+section div#second_section_menu {
+  padding: 17px;
+}
+
+section p {
+  font-size: 18px;
+  color: #af524b;
+}
+
+section ul li {
+  color: #af524b;
+}
+
+section strong {
+  color: #af524b;
+  font-size: 22px;
+}
+
+section div#second_section_save {
+  padding: 17px;
+}
+
+section#second_section div h4 {
+  margin-bottom: 32px;
+  font-size: 23px;
+  color: #af524b;
+  text-align: center;
+}
+
+section#second_section div p {
+  margin-top: 16px;
+  font-size: 19px;
+  color: #af524b;
+  text-align: center;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+
+section#second_section div button {
+  background-color: #af524b;
+  padding: 11px 17px;
+  color: white;
+  position: relative;
+  left: 45px;
+  margin: 20px 0;
+}
+
+/* 2st.section */
+
+/* 3st.section */
+
+section#third_section h3 {
+  font-size: 41px;
+  color: #af524b;
+  text-align: center;
+  line-height: 50px;
+  padding: 17px;
+}
+
+section ul {
+  padding: 17px;
+}
+
+section ul li {
+  padding: 0px 0px 0px 40px;
+  font-size: 19px;
+}
+
+section ul li#first_li {
+  margin: 10px 0;
+  line-height: 27px;
+}
+
+section ul li#second_li {
+  margin: 10px 0;
+}
+
+section ul li#third_li {
+  margin: 10px 0;
+  line-height: 27px;
+}
+
+section ul li#fourth_li {
+  margin: 10px 0;
+  line-height: 27px;
+}
+
+section ul li#fifth_li {
+  margin: 10px 0;
+  line-height: 27px;
+}
+
+section ol li h4 {
+  font-size: 24px;
+  color: #af524b;
+}
+
+section ol li p {
+  color: #af524b;
+}
+
+section img {
+  padding: 17px;
+}
+
+/* 3st.section */
+
+/* 4st.section */
+section#fourth_section {
+  padding: 55px 0;
+}
+
+section#fourth_section ol li h4 {
+  margin: 12px 0;
+}
+
+section#fourth_section ol li p {
+  margin: 10px 0;
+  white-space: pre-wrap;
+  padding-right: 50px;
+  line-height: 25px;
+}
+
+section#fourth_section h3 {
+  font-size: 41px;
+  color: #af524b;
+  text-align: left;
+  padding: 30px 0 0 30px;
+}
+
+section#fourth_section {
+  text-align: center;
+}
+
+/* 4st.section */
+
+/* footer */
+
+footer div#footer_info {
+  padding: 17px;
+  color: #af542b;
+}
+
+footer div p#footer_storename {
+  margin-bottom: 25px;
+}
+
+footer div p#footer_storeaddress {
+  margin-top: 25px;
+}
+
+footer nav {
+  color: #af542b;
+  padding: 17px;
+}
+
+footer div#icons {
+  padding: 17px;
+}
+
+/* footer */
+
+@media screen and (min-width: 481px) {
+  section#second_section div button {
+    position: relative;
+    left: 270px;
+  }
+
+  #first_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #first_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #third_section_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  #footer_icons {
+    display: flex;
+    flex-direction: row;
+    color: #af542b;
+  }
+}
+@media screen and (min-width: 960px) {
+  section#second_section div h3 {
+    font-size: 50px;
+  }
+
+  #coffee_price strong {
+    font-size: 30px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  #footer_icons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #store_info {
+    height: 700px;
+  }
+}
